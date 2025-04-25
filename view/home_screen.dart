@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         style: TextStyle(color: ColorConst.textcolor),
                       ),
                     ),
-                    SizedBox(width: 90),
+                    SizedBox(width: 800),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.end,
@@ -126,7 +126,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
                             ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor: ColorConst.btncolor),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                                minimumSize: Size(80, 58),
+                                backgroundColor: ColorConst.btncolor,
+                              ),
                               onPressed: () {},
                               child: Text("Test our AI   ",
                                   style:
