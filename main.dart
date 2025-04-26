@@ -1,4 +1,4 @@
-import 'package:clt_academy/view/home_screen.dart';
+import 'package:clt_academy/view/banner_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
       title: 'CLT Academy',
-      home: const HomeScreen(),
+      home: const BannerScreen(),
     );
   }
 }

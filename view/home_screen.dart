@@ -1,5 +1,6 @@
 import 'package:clt_academy/constants/color_constants.dart';
 import 'package:clt_academy/constants/text_constants.dart';
+import 'package:clt_academy/view/about.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,75 +22,93 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             SizedBox(height: 50),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Row(
-                  children: [
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "OneText",
-                        style: TextStyle(color: ColorConst.textcolor),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 70),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: 700,
+                        color: Colors.black12,
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => About_Screen()),
+                                  );
+                                },
+                                child: Text(
+                                  "About Us",
+                                  style: TextConstants.TabText(),
+                                ),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text("Courses",
+                                    style: TextConstants.TabText()),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text("Trainers",
+                                    style: TextConstants.TabText()),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text("Add-ons",
+                                    style: TextConstants.TabText()),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text("Tools",
+                                    style: TextConstants.TabText()),
+                              ),
+                              ElevatedButton(
+                                onPressed: () {},
+                                child: Text("Contact Us",
+                                    style: TextConstants.TabText()),
+                              ),
+                            ]),
                       ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Features",
-                        style: TextStyle(color: ColorConst.textcolor),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Pricing",
-                        style: TextStyle(color: ColorConst.textcolor),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Blogs",
-                        style: TextStyle(color: ColorConst.textcolor),
-                      ),
-                    ),
-                    ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "FAQ",
-                        style: TextStyle(color: ColorConst.textcolor),
-                      ),
-                    ),
-                    SizedBox(width: 800),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        TextButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Login",
-                              style: TextStyle(color: ColorConst.textcolor),
-                            )),
-                        Stack(alignment: Alignment.centerRight, children: [
-                          OutlinedButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Get Started   ",
-                              style: TextStyle(color: ColorConst.textcolor),
-                            ),
+                      SizedBox(width: 450),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          TextButton(
+                              onPressed: () {},
+                              child: Text("Login",
+                                  style: TextConstants.TabText())),
+                          Stack(
+                            alignment: Alignment.centerRight,
+                            children: [
+                              OutlinedButton(
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                  minimumSize: Size(40, 40),
+                                ),
+                                onPressed: () {},
+                                child: Text("Sign Up",
+                                    style: TextConstants.TabText()),
+                              ),
+                            ],
                           ),
-                          Icon(Icons.arrow_circle_right)
-                        ]),
-                      ],
-                    )
-                  ],
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
             SizedBox(height: 90.0),
             Padding(
-              padding: const EdgeInsets.only(left: 50),
+              padding: const EdgeInsets.only(left: 70),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
