@@ -1,6 +1,11 @@
 import 'package:clt_academy/constants/color_constants.dart';
 import 'package:clt_academy/constants/text_constants.dart';
 import 'package:clt_academy/view/about.dart';
+import 'package:clt_academy/view/add_ons.dart';
+import 'package:clt_academy/view/contact_us.dart';
+import 'package:clt_academy/view/courses.dart';
+import 'package:clt_academy/view/tools.dart';
+import 'package:clt_academy/view/trainers.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -48,27 +53,57 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Courses()),
+                                  );
+                                },
                                 child: Text("Courses",
                                     style: TextConstants.TabText()),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Trainers()),
+                                  );
+                                },
                                 child: Text("Trainers",
                                     style: TextConstants.TabText()),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Add_ons()),
+                                  );
+                                },
                                 child: Text("Add-ons",
                                     style: TextConstants.TabText()),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Tools()),
+                                  );
+                                },
                                 child: Text("Tools",
                                     style: TextConstants.TabText()),
                               ),
                               ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => ContactUs()),
+                                  );
+                                },
                                 child: Text("Contact Us",
                                     style: TextConstants.TabText()),
                               ),

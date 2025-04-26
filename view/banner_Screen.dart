@@ -14,6 +14,7 @@ class BannerScreen extends StatelessWidget {
           children: [
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Making",
@@ -43,7 +44,7 @@ class BannerScreen extends StatelessWidget {
                       fontSize: 60,
                       fontWeight: FontWeight.bold),
                 ),
-                // Center(child: Lottie.network("https://app.lottiefiles.com/share/8deafb3c-f598-4c3c-a080-0a735b6c82dd"))
+                //  Center(child: Lottie.network("https://app.lottiefiles.com/share/8deafb3c-f598-4c3c-a080-0a735b6c82dd"))
               ],
             ),
 
